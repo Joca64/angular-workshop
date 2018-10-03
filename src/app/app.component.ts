@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { environment } from '@env/environment';
 
 @Component({
   selector: 'app-root',
@@ -28,4 +29,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-workshop';
+
+  constructor () {
+    console.log({ environment });
+  } 
 }
